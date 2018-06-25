@@ -1,0 +1,46 @@
+{
+  "_from": "git+https://github.com/june1249/cordova-plugin-elandmdm.git",
+  "_id": "elandmdm@1.0.0",
+  "_inBundle": false,
+  "_location": "/elandmdm",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/june1249/cordova-plugin-elandmdm.git",
+    "rawSpec": "https://github.com/june1249/cordova-plugin-elandmdm.git",
+    "saveSpec": "git+https://github.com/june1249/cordova-plugin-elandmdm.git",
+    "fetchSpec": "https://github.com/june1249/cordova-plugin-elandmdm.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/june1249/cordova-plugin-elandmdm.git#c28096e8effa2d726db8f2ac89236f7870a17658",
+  "_spec": "https://github.com/june1249/cordova-plugin-elandmdm.git",
+  "_where": "/Users/june/Documents/Projects/mobile/Templates/Plugin/FreamworkTest",
+  "author": {
+    "name": "ElandSystems"
+  },
+  "bugs": {
+    "url": "https://github.com/june1249/cordova-plugin-elandmdm/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Eland, MDM, Mobile Device Management",
+  "homepage": "https://github.com/june1249/cordova-plugin-elandmdm#readme",
+  "keywords": [
+    "Eland"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "elandmdm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/june1249/cordova-plugin-elandmdm.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

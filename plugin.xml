@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-elandmdm" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>ElandMDM</name>
+
+    <js-module name="ElandMDM" src="www/ElandMDM.js">
+        <clobbers target="cordova.plugins.ElandMDM" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ElandMDM">
+                <param name="android-package" value="cordova.plugin.elandmdm.ElandMDM" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+          <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+          <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+          <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+          <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+          <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+        <framework src="src/android/mdm.gradle" custom="true" type="gradleReference" />
+        <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
+        <lib-file src="src/android/MDMLib_3_0_2_1.aar" target="libs/MDMLib_3_0_2_1.aar"/>
+        <preference name="ANDROID_SUPPORT_V4_VERSION" default="27.+"/>
+        <source-file src="src/android/ElandMDM.java" target-dir="src/cordova/plugin/elandmdm/ElandMDM" />
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ElandMDM">
+                <param name="ios-package" value="ElandMDM" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/ElandMDM.m" />
+    </platform>
+</plugin>
